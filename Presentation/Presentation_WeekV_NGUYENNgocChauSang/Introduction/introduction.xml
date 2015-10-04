@@ -1,0 +1,2269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<introduction>
+  <information>
+    <title>
+      Distributed Processing &amp; Network Management (DPNM) Lab.        &#13;
+      Dept. of Computer Science and Engineering, POSTECH
+    </title>
+    <paragraph>  The Distributed Processing and Network Management Laboratory (DPNM, dpnm.postech.ac.kr) in the Dept. of Computer Science and Engineering, founded by Prof. James Won-Ki Hong in 1995, is located in the POSTECH Information Research Laboratories. Prof. Hong is internationally recognized with his devotion to research activities in networking and distributed computing. He has published more than 100 international journal and conference papers. He has served numerous international positions including Technical Chair for IEEE ComSoc CNOM (www.comsoc.org/~cnom) from 1998 to 2000, Technical Program Co-chair for IEEE NOMS 2000 and APNOMS'99 (www.apnoms.org), and Finance Chair and Chair of local planning committee for IEEE/IFIP NOMS 2004 (www.noms2004.org). He is also an editorial advisory board member of International Journal on Network Management (IJNM) and Editor-in-Chief of KNOM Review Journal (www.knom.or.kr/knom-review/). He is currently serving as Vice Chair for IEEE ComSoc CNOM and Chair for KICS KNOM (www.knom.or.kr). Under his leadership and professionalism, DPNM has been emerged as one of the most active research laboratories in Korea as well as in the rest of the world.    </paragraph>
+    <paragraph>&nbsp;</paragraph>
+    <paragraph>DPNM has been working on two major research areas: networking and distributed computing.  With its remarkable reputation, DPNM has built very close relationships with industry. The DPNM��s project partners are listed from government-funded organizations such as ETRI, KOSEF, KREN, to multi-billion corporations such as Samsung, POSCO, KT, KTF, and POSDATA. Some of the projects even go abroad, like a recent contact from Quintessential IT Solutions, a wireless network solution provider in Australia. </paragraph>
+    <paragraph>&nbsp;</paragraph>
+    <paragraph>   In the networking area, DPNM is currently focusing on network and systems management. The goal is to develop methods, tools and systems that can be used for more efficient, secure and reliable operation and management of computer and telecommunication networks. DPNM is particularly interested in monitoring, analyzing and controlling IP networks. DPNM��s current projects include analyzing captured IP traffic for applications such as network security attack analysis, workload characterization, performance analysis, billing, SLA management, and customer relationship management.    </paragraph>
+    <paragraph>&nbsp;</paragraph>
+    <paragraph>DPNM��s ingenuity and efforts finally led to the development of the Next Generation Traffic Monitoring System called NG-MON (ngmon.postech.ac.kr). Today, the bandwidth of ISP's backbone networks is evolving from OC-48 (2.5 Gbps) to OC-192 (10 Gbps) to support rapidly increasing Internet traffic. To cope with monitoring and analysis needs for multi-gigabit networks, the NG-MON project provides a scalable and cost-effective solution. For the design details, NG-MON subdivides the monitoring processes into multiple phases and distributes the processing load over them by allocating a system for each phase. If the distributed load in each phase is still beyond the capability of a single system, then it can be composed of a cluster of systems. NG-MON��s key features include the host throughput analysis, application traffic analysis (e.g., the ability to recognize multimedia and complex peer-to-peer application traffic), and security attack analysis (e.g., the ability to detect DoS/DDoS attacks, worms and viruses). </paragraph>
+    <paragraph>&nbsp;</paragraph>
+    <paragraph>    In the distributed computing area, DPNM pays close attention to distributed computing environments and technologies (such as OMG CORBA, WWW, Web Services - SOAP, UDDI, WSDL, and XML), multimedia system services, and distributed systems and applications management.  The DPNM��s research objective in this area is to provide a secure, friendly and reliable computing environment for the development, operation and management of client-server, peer-to-peer, distributed applications in the presence of networked heterogeneous computing platforms.    </paragraph>
+    <paragraph>&nbsp;</paragraph>
+    <paragraph>DPNM has worked for quite some time on XML-based network management systems (XNMS) and earned its reputation. XNMS allows the system administrator to manage and control IP network devices (e.g., routers, switches, gateways, DSLAMs, access points, and etc.) more conveniently and efficiently. The XML/SNMP gateway implemented within the XNMS project allows SNMP equipped devices to be managed by XNMS. DPNM is also an active participant of IETF standard efforts. Recently, DPNM has been working on contributing to the standardization of NETCONF, which is a protocol currently being proposed for configuration management of network devices using XML technologies.    </paragraph>
+    <paragraph>&nbsp;</paragraph>
+    <paragraph>Since joining POSTECH in 1995, Prof. Hong supervised and produced 32 M.S. and two Ph.D. graduates. The alumni of DPNM are the essential units and major driving force of Korea��s research laboratories and commercial organizations. The diversity among DPNM members is another strong asset of this laboratory. DPNM has its members not only from Korea but also from all over the world like India, Canada, and U.S.A.    </paragraph>
+    <paragraph>&nbsp;</paragraph>
+    <paragraph>Along with its extensive knowledge and experience with the IT and telecommunication industry, DPNM will continue to play a key role in research for innovative technologies in networking and distributed computing.            </paragraph>
+    <tail>
+      &nbsp;This homepage is maintained by mount.               &nbsp;&nbsp;&nbsp;Last updated : Nov. 18, 2003 &#13;
+    </tail>
+  </information>
+  <areas>
+    <area>
+      <name>Networking Areas </name>
+      <node>         &nbsp;              &nbsp;SLA Management     </node>
+      <node>
+        &nbsp;              &nbsp;Network Traffic Monitoring 	    &#13;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- NG-Mon: Next Generation Network Traffic Monitoring  	    &#13;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- MRTG+: Web-based Internet/Intranet Network Traffic Load Monitoring  	    &#13;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- WebTrafMon: Web-based  Internet/Intranet Network Traffic Type &amp; Source/Destination &nbsp;&nbsp;&nbsp;&nbsp;Monitoring  	    &#13;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Web based  RTFM(Real-time Traffic Flow Measurement) Management
+      </node>
+      <node>         &nbsp;              &nbsp;Web-Based Management      </node>
+      <node>         &nbsp;              &nbsp;SNMP-Based Management      </node>
+      <node>         &nbsp;              &nbsp;XML-Based Management      </node>
+      <node>         &nbsp;              &nbsp;Internet Application Services Management      </node>
+      <node>         &nbsp;              &nbsp;Network, System and Application Management      </node>
+      <node>         &nbsp;              &nbsp;Mobile Agent-based Network and Services  Management      </node>
+      <node>         &nbsp;              &nbsp;Embedded Web Servers      </node>
+      <node>         &nbsp;              &nbsp;Corba-based Network Management      </node>
+      <node>         &nbsp;              &nbsp;Policy-based Network Management      </node>
+      <node>         &nbsp;              &nbsp;Web caching      </node>
+      <node>         &nbsp;              &nbsp;Internet Security      </node>
+      <node>         &nbsp;              &nbsp;Network Management for Next Generation Internet (NGI)      </node>
+      <node>         &nbsp;              &nbsp;Home Networking      </node>
+      <node>         &nbsp;              &nbsp;Embedded Linux      </node>
+      <node>         &nbsp;              &nbsp;Differentiated Services (Diffserv)      </node>
+      <node>         &nbsp;              &nbsp;Resource ReSerVation Protocol (RSVP)      </node>
+      <node>         &nbsp;              &nbsp;Development of  Internet Server Technology supporting Differentiated QoS services      </node>
+      <node>         &nbsp;              &nbsp;Lightweight Directory Access Protocol (LDAP)      </node>
+      <node>         &nbsp;              &nbsp;NGOSS (New Gerneration Operating Systems </node>
+      <node>         &nbsp;              &nbsp;Autonomic Computing, Autonomic 			Network and System Management     </node>
+      <node>         &nbsp;              &nbsp;Automated Signature Generation for Traffic Identification     </node>
+    </area>
+    <area>
+      <name>
+        &nbsp;Distributed Processing Areas&#13;
+      </name>
+      <node>         &nbsp;&lt;/font&gt;              &nbsp;Peer-to-Peer (P2P) Computing      </node>
+      <node>         &nbsp;&lt;/font&gt;              &nbsp;Grid Computing      </node>
+      <node>         &nbsp;              &nbsp;Multimedia Collaboration Services and Applications      </node>
+      <node>         &nbsp;              &nbsp;CORBA     </node>
+      <node>                      &nbsp;              &nbsp;DCE&lt;/a&gt;      </node>
+      <node>         &nbsp;              &nbsp;End-to-end QoS Management &lt;/font&gt;     </node>
+      <node>         &nbsp;              &nbsp;ODP  Trader      </node>
+      <node>         &nbsp;              &nbsp;Linux Clustering &lt;/font&gt;     </node>
+    </area>
+  </areas>
+  <resources>
+    <software>
+      <resource>
+        <name>Bundle CDs</name>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> Transarc DCE 1.1 (Solaris 2.4) International Edition 	 </value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó  </name>
+            <value> &nbsp; </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> Transarc DCE 1.1 (Solaris 2.5) International Edition 	 </value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó  </name>
+            <value> &nbsp; </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> Transarc DCE 1.0.3a (Solaris 1.1) Base Module  	 </value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó  </name>
+            <value> &nbsp; </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> Transarc DCE 1.0.3a (Solaris 2.3) Base Module  	 </value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó  </name>
+            <value> &nbsp; </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> Transarc DCE 1.0.3a (Solaris 2.4) Base Module  	 </value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó  </name>
+            <value> &nbsp; </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> DCE Curriculum Sampler  	 </value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó  </name>
+            <value> &nbsp; </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> SunFastEthernet Adapter 2.0  	 </value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó  </name>
+            <value> &nbsp; </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> Catalyst CDWare (SEP - DEC 1995) - SunSoft  	 </value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó  </name>
+            <value> &nbsp; </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> Catalyst CDWare (JAN - MAY 1996) - SunSoft  	 </value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó  </name>
+            <value> &nbsp; </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> Turn the PowerON! Volume III - Hewlett Packard (2)  	 </value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó  </name>
+            <value> &nbsp; </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> InterWorks Contributed Software Library 05/95 (HP-UX &amp;DOMAIN) 	 </value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó  </name>
+            <value> &nbsp; </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> AIX Software Development Soutions volume 3.0(IBM) 	 </value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó  </name>
+            <value> &nbsp; </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> Software Development Solutions for AIX Version 3.2 volume 6 (IBM) 	 </value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó  </name>
+            <value> &nbsp; </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> AIX V3.2 Year 2000 Update CD 	 </value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó  </name>
+            <value> &nbsp; </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> Internet Innovators Solutions v1.0 for DIGITAL UNIX 	 </value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó  </name>
+            <value> &nbsp; </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> AlphaServer 1000 FastTrack to Information 	 </value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó  </name>
+            <value> &nbsp; </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> Documentation - Cisco Symtems 	 </value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó  </name>
+            <value> &nbsp; </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> DATA BANK - Macintosh DTP Collection vol.2 	 </value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó  </name>
+            <value> &nbsp; </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> Apple Macintosh CD (Includes system software and other programs) 	 </value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó  </name>
+            <value> &nbsp; </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> Apple Macintosh CD (Power Macintosh �ѱ Talk7.5 system software) 	 </value>
+          </attribute>
+          <attribute>
+            <name>۱���ó      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó  </name>
+            <value> &nbsp; </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> BUILDER Xcessory (CD-ROM Mounting Instructions) - ICS 	 </value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó  </name>
+            <value> &nbsp;    </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> HP-UX Install Release 10.0 	 </value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó  </name>
+            <value> &nbsp; </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> HP Upgrade Tools Release 10.0 	 </value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó  </name>
+            <value> &nbsp; </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> HP-UX Extension Software  	 </value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó  </name>
+            <value> &nbsp; </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> HP-UX Support Release 10.0 	 </value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó  </name>
+            <value> &nbsp; </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> Korean HP-UX Core OS Release 10.0 	 </value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó  </name>
+            <value> &nbsp; </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> HP-UX Extension Software 	 </value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó  </name>
+            <value> &nbsp; </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> HP-UX Applications Release 10.0 	 </value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó  </name>
+            <value> &nbsp; </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> HP-UX Recommended Patches Extension Software HP-UX 10.x/11.x (1/2) 	 </value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó  </name>
+            <value> &nbsp;  	  </value>
+          </attribute>
+        </row>
+      </resource>
+      <resource>
+        <name>Microsoft OS � Softwares</name>
+        <row>
+          <attribute>
+            <name>��̸�       </name>
+            <value> MICROSOFT WINDOWS 95 (3) 	</value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> ����Ʈ ��ǻ� 	</value>
+          </attribute>
+          <attribute>
+            <name>ͱ����      </name>
+            <value> &nbsp; 	</value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó  </name>
+            <value> &nbsp;  </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> MICROSOFT WINDOWS ME (10)  	</value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> 		����Ʈ ��ǻ� 	</value>
+          </attribute>
+          <attribute>
+            <name>ͱ����      </name>
+            <value> 		2001.04.09 	</value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó  </name>
+            <value> 		(054)272-1337  </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> MSDN 	</value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> 		&nbsp; 	</value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> 		&nbsp; 	</value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó  </name>
+            <value> 		&nbsp;  </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> MSDN Premium Release 	</value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> 		&nbsp; 	</value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> 		&nbsp; 	</value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó  </name>
+            <value> 		&nbsp;  </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> TechNet 	</value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> 		&nbsp; 	</value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> 		&nbsp; 	</value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó  </name>
+            <value> 		&nbsp;   </value>
+          </attribute>
+        </row>
+      </resource>
+      <resource>
+        <name>Sound, Video, Printer Device Driver CD </name>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> QuickCam 5.0 Installation CD - Logitech 	 </value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó </name>
+            <value> &nbsp; </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> HP ScanJet ��� - Windows version 	 </value>
+          </attribute>
+          <attribute>
+            <name>籸��ó      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó </name>
+            <value> &nbsp; </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> Dreamsys Master-CD Version 2.1 	 </value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó </name>
+            <value> &nbsp; </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> SoundBlaster AWE64 IE  	 </value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó </name>
+            <value> &nbsp; </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> SoundBlaster PCI64 	 </value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó </name>
+            <value> &nbsp; </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> MGA Installation SuperPack 	 </value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó </name>
+            <value> &nbsp; </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> HAWK AGP Driver (REV:Lamtech 9905F) 	 </value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó </name>
+            <value> &nbsp; </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> DIAMOND Monster Fusion Version 1.07 	 </value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó </name>
+            <value> &nbsp;  </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> �ѱ 97  	 </value>
+          </attribute>
+          <attribute>
+            <name>۱���ó      </name>
+            <value> ��� ��Ϲ����ǻ�  	 </value>
+          </attribute>
+          <attribute>
+            <name>ͱ����      </name>
+            <value> 1998.6.1  	 </value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó </name>
+            <value> 054-277-2799  </value>
+          </attribute>
+        </row>
+      </resource>
+      <resource>
+        <name>Micellaneous</name>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> �ѱ 97  	 </value>
+          </attribute>
+          <attribute>
+            <name>۱���ó      </name>
+            <value> ��� ��Ϲ����ǻ�  	 </value>
+          </attribute>
+          <attribute>
+            <name>ͱ����      </name>
+            <value> 1998.6.1  	 </value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó </name>
+            <value> 054-277-2799  </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> ��� ������� 4 	</value>
+          </attribute>
+          <attribute>
+            <name>ͱ���ó      </name>
+            <value> ����Ʈ ��ǻ� 	</value>
+          </attribute>
+          <attribute>
+            <name>ͱ����      </name>
+            <value> 2000.06.28 	</value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó </name>
+            <value> 054-272-1337 </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> RealNetworks 	</value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> 		&nbsp; 	</value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> 		&nbsp; 	</value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó </name>
+            <value> 		&nbsp;  </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> ���̷κ� 	</value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> �� ���α׷� 	</value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> 		&nbsp; 	</value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó </name>
+            <value> 		&nbsp;  </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> NERO BURNING ROM v4.0 	</value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value>		&nbsp;  	</value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> 		&nbsp; 	</value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó </name>
+            <value> 		&nbsp; 	 </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> �ƹ��� ���ǽ� 	</value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> 		&nbsp; 	</value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> 		&nbsp; 	</value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó </name>
+            <value> 		&nbsp; 	 </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> �ѱ 97 (������� 95/98/NT�) 	</value>
+          </attribute>
+          <attribute>
+            <name>뱸��ó      </name>
+            <value> 		&nbsp; 	</value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> 		&nbsp; 	</value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó </name>
+            <value> 		&nbsp; </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> �Ѹ ƿ� 	</value>
+          </attribute>
+          <attribute>
+            <name>屸��ó      </name>
+            <value> 		&nbsp; 	</value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> 		&nbsp; 	</value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó </name>
+            <value> 		&nbsp;  </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> RATIONAL ROSE 98(2) 	</value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> 		&nbsp; 	</value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> 		&nbsp; 	</value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó </name>
+            <value> 		&nbsp; </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> MGI VideoWave II SE plus  	 </value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value>&nbsp;  	 </value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value>&nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó </name>
+            <value>&nbsp; </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> MGI PhotoSuite II SE  	 </value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value>&nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó </name>
+            <value>&nbsp; </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value> Informix Dynamic Server 7.3 on Linux 	 </value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> &nbsp; 	 </value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó </name>
+            <value> &nbsp;  </value>
+          </attribute>
+        </row>
+      </resource>
+      <resource>
+        <name>Linux �� Package</name>
+        <row>
+          <attribute>
+            <name>��̸�       </name>
+            <value>SuSE Linux 7.1K Professional 	 </value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> &nbsp;  	 </value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> 2001.7.6  	 </value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó </name>
+            <value> &nbsp; </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value>Redhat Linux 6.2 	 </value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> &nbsp;  	 </value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> &nbsp;  	 </value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó </name>
+            <value> &nbsp; </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value>WOWLinux 7.1 Paran release 	 </value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> &nbsp;  	 </value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> &nbsp;  	 </value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó </name>
+            <value> &nbsp; </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�̸�       </name>
+            <value>turbolinux -JSA(Joint Solutions Alliance) 	 </value>
+          </attribute>
+          <attribute>
+            <name>����ó      </name>
+            <value> &nbsp;  	 </value>
+          </attribute>
+          <attribute>
+            <name>�����      </name>
+            <value> &nbsp;  	 </value>
+          </attribute>
+          <attribute>
+            <name> Ͽ���ó </name>
+            <value> &nbsp; </value>
+          </attribute>
+        </row>
+      </resource>
+      <resource>
+        <name>Linux@Work &amp; ��α׷� ��� �η CD</name>
+        <row>
+          <attribute>
+            <name>Ϲ����       </name>
+            <value>2000� 1�  	 </value>
+          </attribute>
+          <attribute>
+            <name>��ֿ䳻� </name>
+            <value>
+              CD1 : AccelLinux 6.1 &#13;
+              CD2 : JBuilder 3.0 Foundation, Installsheild 2000 eval, Vin4class 7.0 eval, URL Free 1.0
+            </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�����       </name>
+            <value>2000� 3�  	 </value>
+          </attribute>
+          <attribute>
+            <name>��ֿ䳻� </name>
+            <value>
+              CD1 : MIZI OS 1.1 Beta &#13;
+              CD2 :Star Office 5.1, 븮������ �� �ų�� �ƿ��Ƽ, CA ArcServe IT/ Uni Center TNG Framework
+            </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�����       </name>
+            <value>2001� 2�  	 </value>
+          </attribute>
+          <attribute>
+            <name>��ֿ䳻� </name>
+            <value>WOWLINUX 7.0 Khachi release </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�����       </name>
+            <value>2001� 5�  	 </value>
+          </attribute>
+          <attribute>
+            <name>��ֿ䳻� </name>
+            <value>RedHat Linux 7.1 CD1,2 </value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>�����       </name>
+            <value>2001� 8�  	 </value>
+          </attribute>
+          <attribute>
+            <name>��ֿ䳻� </name>
+            <value>��ѱ Visual Studio.NET Beta 2 </value>
+          </attribute>
+        </row>
+      </resource>
+    </software>
+    <pc>
+      <title>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DP&amp;NM Personal Computers</title>
+      <inventory>
+        <row>
+          <attribute>
+            <name>Name</name>
+            <value>ebro</value>
+          </attribute>
+          <attribute>
+            <name>ۻ���</name>
+            <value>ڱ��翵</value>
+          </attribute>
+          <attribute>
+            <name>CPU</name>
+            <value>Pentium III 800MHz</value>
+          </attribute>
+          <attribute>
+            <name>HDD</name>
+            <value>Quantum 20GB </value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;&nbsp;RAM&nbsp;&nbsp;</name>
+            <value>128MB</value>
+          </attribute>
+          <attribute>
+            <name>���Գ�¥</name>
+            <value>2000.8</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;����ó&nbsp;&nbsp;</name>
+            <value>����Ʈ</value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>Name</name>
+            <value>london</value>
+          </attribute>
+          <attribute>
+            <name>����</name>
+            <value>ڰ�4��(��кλ)</value>
+          </attribute>
+          <attribute>
+            <name>CPU</name>
+            <value>Pentium III 800MHz</value>
+          </attribute>
+          <attribute>
+            <name>HDD</name>
+            <value>Quantum 20GB </value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;&nbsp;RAM&nbsp;&nbsp;</name>
+            <value>128MB</value>
+          </attribute>
+          <attribute>
+            <name>��Գ�¥</name>
+            <value>2000.6</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;����ó&nbsp;&nbsp;</name>
+            <value>����Ʈ</value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>Name</name>
+            <value>lyon</value>
+          </attribute>
+          <attribute>
+            <name>����</name>
+            <value>ڱ����</value>
+          </attribute>
+          <attribute>
+            <name>CPU</name>
+            <value>Pentium III 800MHz</value>
+          </attribute>
+          <attribute>
+            <name>HDD</name>
+            <value>Quantum 20GB</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;&nbsp;RAM&nbsp;&nbsp;</name>
+            <value>128MB</value>
+          </attribute>
+          <attribute>
+            <name>���Գ�¥</name>
+            <value>2000.6</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;����ó&nbsp;&nbsp;</name>
+            <value>����Ʈ</value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>Name</name>
+            <value>dublin</value>
+          </attribute>
+          <attribute>
+            <name>����</name>
+            <value>ڰ� 4��(��кλ)</value>
+          </attribute>
+          <attribute>
+            <name>CPU</name>
+            <value>Pentium III 800MHz</value>
+          </attribute>
+          <attribute>
+            <name>HDD</name>
+            <value>Quantum 20GB</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;&nbsp;RAM&nbsp;&nbsp;</name>
+            <value>128MB</value>
+          </attribute>
+          <attribute>
+            <name>��Գ�¥</name>
+            <value>2000.6</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;����ó&nbsp;&nbsp;</name>
+            <value>����Ʈ</value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>Name</name>
+            <value>orinoco</value>
+          </attribute>
+          <attribute>
+            <name>����</name>
+            <value>��̼��</value>
+          </attribute>
+          <attribute>
+            <name>CPU</name>
+            <value>Pentium III 800MHz</value>
+          </attribute>
+          <attribute>
+            <name>HDD</name>
+            <value>IBM 13.6GB</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;&nbsp;RAM&nbsp;&nbsp;</name>
+            <value>128MB</value>
+          </attribute>
+          <attribute>
+            <name>��Գ�¥</name>
+            <value>1999.8</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;����ó&nbsp;&nbsp;</name>
+            <value>&nbsp;</value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>Name</name>
+            <value>fitzroy</value>
+          </attribute>
+          <attribute>
+            <name>����</name>
+            <value>ڰ� 2��(SQL)</value>
+          </attribute>
+          <attribute>
+            <name>CPU</name>
+            <value>Pentium III 650MHz</value>
+          </attribute>
+          <attribute>
+            <name>HDD</name>
+            <value>Quantum 20.5GB</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;&nbsp;RAM&nbsp;&nbsp;</name>
+            <value>128MB</value>
+          </attribute>
+          <attribute>
+            <name>��Գ�¥</name>
+            <value>1999</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;����ó&nbsp;&nbsp;</name>
+            <value>&nbsp;</value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>Name</name>
+            <value>indus</value>
+          </attribute>
+          <attribute>
+            <name>����</name>
+            <value>ڰ� 4��(���հ��)</value>
+          </attribute>
+          <attribute>
+            <name>CPU</name>
+            <value>Pentium III 600MHz</value>
+          </attribute>
+          <attribute>
+            <name>HDD</name>
+            <value>Quantum 20GB</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;&nbsp;RAM&nbsp;&nbsp;</name>
+            <value>128MB</value>
+          </attribute>
+          <attribute>
+            <name>���Գ�¥</name>
+            <value>1999</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;����ó&nbsp;&nbsp;</name>
+            <value>����Ʈ</value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>Name</name>
+            <value>niger</value>
+          </attribute>
+          <attribute>
+            <name>����</name>
+            <value>����</value>
+          </attribute>
+          <attribute>
+            <name>CPU</name>
+            <value>Pentium III 600MHz</value>
+          </attribute>
+          <attribute>
+            <name>HDD</name>
+            <value>Quantum 13GB</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;&nbsp;RAM&nbsp;&nbsp;</name>
+            <value>128MB</value>
+          </attribute>
+          <attribute>
+            <name>α��Գ�¥</name>
+            <value>1999</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;����ó&nbsp;&nbsp;</name>
+            <value>����Ʈ</value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>Name</name>
+            <value>thames</value>
+          </attribute>
+          <attribute>
+            <name>����</name>
+            <value>���ȫ�</value>
+          </attribute>
+          <attribute>
+            <name>CPU</name>
+            <value>Pentium III 600MHz</value>
+          </attribute>
+          <attribute>
+            <name>HDD</name>
+            <value>Quantum 14GB</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;&nbsp;RAM&nbsp;&nbsp;</name>
+            <value>128MB</value>
+          </attribute>
+          <attribute>
+            <name>ñ��Գ�¥</name>
+            <value>1999</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;����ó&nbsp;&nbsp;</name>
+            <value>����Ʈ</value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>Name</name>
+            <value>hwangha</value>
+          </attribute>
+          <attribute>
+            <name>����</name>
+            <value>�ȫ��ȭ</value>
+          </attribute>
+          <attribute>
+            <name>CPU</name>
+            <value>Pentium III 600MHz</value>
+          </attribute>
+          <attribute>
+            <name>HDD</name>
+            <value>IBM 12GB</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;&nbsp;RAM&nbsp;&nbsp;</name>
+            <value>128MB</value>
+          </attribute>
+          <attribute>
+            <name>���Գ�¥</name>
+            <value>1999</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;����ó&nbsp;&nbsp;</name>
+            <value>&nbsp;</value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>Name</name>
+            <value>goldriver</value>
+          </attribute>
+          <attribute>
+            <name>����</name>
+            <value>ڷ���</value>
+          </attribute>
+          <attribute>
+            <name>CPU</name>
+            <value>Pentium III 500MHz</value>
+          </attribute>
+          <attribute>
+            <name>HDD</name>
+            <value>IBM 13.6GB</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;&nbsp;RAM&nbsp;&nbsp;</name>
+            <value>128MB</value>
+          </attribute>
+          <attribute>
+            <name>��Գ�¥</name>
+            <value>1999</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;����ó&nbsp;&nbsp;</name>
+            <value>&nbsp;</value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>Name</name>
+            <value>nakdong</value>
+          </attribute>
+          <attribute>
+            <name>����</name>
+            <value>ڰ� 2�� (SQL)</value>
+          </attribute>
+          <attribute>
+            <name>CPU</name>
+            <value>Pentium III 500MHz</value>
+          </attribute>
+          <attribute>
+            <name>HDD</name>
+            <value>IBM 9GB</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;&nbsp;RAM&nbsp;&nbsp;</name>
+            <value>128MB</value>
+          </attribute>
+          <attribute>
+            <name>��Գ�¥</name>
+            <value>1999</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;����ó&nbsp;&nbsp;</name>
+            <value>&nbsp;</value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>Name</name>
+            <value>soyang</value>
+          </attribute>
+          <attribute>
+            <name>����</name>
+            <value>��ֹ��</value>
+          </attribute>
+          <attribute>
+            <name>CPU</name>
+            <value>Pentium III 500MHz</value>
+          </attribute>
+          <attribute>
+            <name>HDD</name>
+            <value>IBM 12.7GB</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;&nbsp;RAM&nbsp;&nbsp;</name>
+            <value>128MB</value>
+          </attribute>
+          <attribute>
+            <name>���Գ�¥</name>
+            <value>1999</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;����ó&nbsp;&nbsp;</name>
+            <value>&nbsp;</value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>Name</name>
+            <value>anne</value>
+          </attribute>
+          <attribute>
+            <name>����</name>
+            <value>ڰ� 4��(Etri)</value>
+          </attribute>
+          <attribute>
+            <name>CPU</name>
+            <value>Pentium III 450MHz</value>
+          </attribute>
+          <attribute>
+            <name>HDD</name>
+            <value>Quantum 10.2GB</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;&nbsp;RAM&nbsp;&nbsp;</name>
+            <value>128MB</value>
+          </attribute>
+          <attribute>
+            <name>��Գ�¥</name>
+            <value>1999.10</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;����ó&nbsp;&nbsp;</name>
+            <value>&nbsp;</value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>Name</name>
+            <value>teri</value>
+          </attribute>
+          <attribute>
+            <name>����</name>
+            <value>ڰ� 4��(Etri)</value>
+          </attribute>
+          <attribute>
+            <name>CPU</name>
+            <value>Pentium III 450MHz</value>
+          </attribute>
+          <attribute>
+            <name>HDD</name>
+            <value>Quantum 10.2GB</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;&nbsp;RAM&nbsp;&nbsp;</name>
+            <value>128MB</value>
+          </attribute>
+          <attribute>
+            <name>��Գ�¥</name>
+            <value>1999.10</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;����ó&nbsp;&nbsp;</name>
+            <value>&nbsp;</value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>Name</name>
+            <value>rome</value>
+          </attribute>
+          <attribute>
+            <name>����</name>
+            <value>���</value>
+          </attribute>
+          <attribute>
+            <name>CPU</name>
+            <value>Pentium III 450MHz</value>
+          </attribute>
+          <attribute>
+            <name>HDD</name>
+            <value>Quantum 12GB</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;&nbsp;RAM&nbsp;&nbsp;</name>
+            <value>128MB</value>
+          </attribute>
+          <attribute>
+            <name>��Գ�¥</name>
+            <value>1999</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;����ó&nbsp;&nbsp;</name>
+            <value>&nbsp;</value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>Name</name>
+            <value>duman</value>
+          </attribute>
+          <attribute>
+            <name>����</name>
+            <value>���ȿ�</value>
+          </attribute>
+          <attribute>
+            <name>CPU</name>
+            <value>Pentium III 450MHz</value>
+          </attribute>
+          <attribute>
+            <name>HDD</name>
+            <value>Quantum 10.2GB</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;&nbsp;RAM&nbsp;&nbsp;</name>
+            <value>128MB</value>
+          </attribute>
+          <attribute>
+            <name>��Գ�¥</name>
+            <value>1999</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;����ó&nbsp;&nbsp;</name>
+            <value>&nbsp;</value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>Name</name>
+            <value>moselle</value>
+          </attribute>
+          <attribute>
+            <name>����</name>
+            <value>����</value>
+          </attribute>
+          <attribute>
+            <name>CPU</name>
+            <value>Pentium II Celeron 366MHz</value>
+          </attribute>
+          <attribute>
+            <name>HDD</name>
+            <value>Quantum 15GB</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;&nbsp;RAM&nbsp;&nbsp;</name>
+            <value>128MB</value>
+          </attribute>
+          <attribute>
+            <name>��Գ�¥</name>
+            <value>1997</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;����ó&nbsp;&nbsp;</name>
+            <value>&nbsp;</value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>Name</name>
+            <value>webtrafmon</value>
+          </attribute>
+          <attribute>
+            <name>����</name>
+            <value>����</value>
+          </attribute>
+          <attribute>
+            <name>CPU</name>
+            <value>Pentium II 350MHz</value>
+          </attribute>
+          <attribute>
+            <name>HDD</name>
+            <value>IBM 12GB</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;&nbsp;RAM&nbsp;&nbsp;</name>
+            <value>128MB</value>
+          </attribute>
+          <attribute>
+            <name>ұ��Գ�¥</name>
+            <value>1999</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;����ó&nbsp;&nbsp;</name>
+            <value>&nbsp;</value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>Name</name>
+            <value>danube</value>
+          </attribute>
+          <attribute>
+            <name>����</name>
+            <value>ڰ����</value>
+          </attribute>
+          <attribute>
+            <name>CPU</name>
+            <value>Pentium II 350MHz</value>
+          </attribute>
+          <attribute>
+            <name>HDD</name>
+            <value>IBM 6.4GB</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;&nbsp;RAM&nbsp;&nbsp;</name>
+            <value>128MB</value>
+          </attribute>
+          <attribute>
+            <name>���Գ�¥</name>
+            <value>1999</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;����ó&nbsp;&nbsp;</name>
+            <value>&nbsp;</value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>Name</name>
+            <value>congo</value>
+          </attribute>
+          <attribute>
+            <name>����</name>
+            <value>��Ѽ��</value>
+          </attribute>
+          <attribute>
+            <name>CPU</name>
+            <value>Pentium II 350MHz</value>
+          </attribute>
+          <attribute>
+            <name>HDD</name>
+            <value>Quantum 6.4GB</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;&nbsp;RAM&nbsp;&nbsp;</name>
+            <value>128MB</value>
+          </attribute>
+          <attribute>
+            <name>��Գ�¥</name>
+            <value>1999</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;����ó&nbsp;&nbsp;</name>
+            <value>&nbsp;</value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>Name</name>
+            <value>oslo</value>
+          </attribute>
+          <attribute>
+            <name>����</name>
+            <value>ڰ� 2�� CD-R</value>
+          </attribute>
+          <attribute>
+            <name>CPU</name>
+            <value>Pentium II 350MHz</value>
+          </attribute>
+          <attribute>
+            <name>HDD</name>
+            <value>Quantum 9.4GB</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;&nbsp;RAM&nbsp;&nbsp;</name>
+            <value>64MB</value>
+          </attribute>
+          <attribute>
+            <name>��Գ�¥</name>
+            <value>1999</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;����ó&nbsp;&nbsp;</name>
+            <value>&nbsp;</value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>Name</name>
+            <value>don</value>
+          </attribute>
+          <attribute>
+            <name>����</name>
+            <value>ڰ����</value>
+          </attribute>
+          <attribute>
+            <name>CPU</name>
+            <value>Pentium II 300MHz</value>
+          </attribute>
+          <attribute>
+            <name>HDD</name>
+            <value> Samsung 2.54GB</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;&nbsp;RAM&nbsp;&nbsp;</name>
+            <value>64MB</value>
+          </attribute>
+          <attribute>
+            <name>���Գ�¥</name>
+            <value>1998</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;����ó&nbsp;&nbsp;</name>
+            <value>�ϳ���ũ</value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>Name</name>
+            <value>amur</value>
+          </attribute>
+          <attribute>
+            <name>����</name>
+            <value>ڰ�2��(��кλ)</value>
+          </attribute>
+          <attribute>
+            <name>CPU</name>
+            <value>Pentium        II 300MHz</value>
+          </attribute>
+          <attribute>
+            <name>HDD</name>
+            <value>Quantum        4.5GB</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;&nbsp;RAM&nbsp;&nbsp;</name>
+            <value>64MB</value>
+          </attribute>
+          <attribute>
+            <name>��Գ�¥</name>
+            <value>1998</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;����ó&nbsp;&nbsp;</name>
+            <value>&nbsp;</value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>Name</name>
+            <value>garone</value>
+          </attribute>
+          <attribute>
+            <name>����</name>
+            <value>ڱ����</value>
+          </attribute>
+          <attribute>
+            <name>CPU</name>
+            <value>Pentium II 300MHz</value>
+          </attribute>
+          <attribute>
+            <name>HDD</name>
+            <value>Quantum 3GB</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;&nbsp;RAM&nbsp;&nbsp;</name>
+            <value>64MB</value>
+          </attribute>
+          <attribute>
+            <name>���Գ�¥</name>
+            <value>1998</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;����ó&nbsp;&nbsp;</name>
+            <value>&nbsp;</value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>Name</name>
+            <value>darling</value>
+          </attribute>
+          <attribute>
+            <name>����</name>
+            <value>ڰ�2��(CD-R)</value>
+          </attribute>
+          <attribute>
+            <name>CPU</name>
+            <value>Pentium II 300MHz</value>
+          </attribute>
+          <attribute>
+            <name>HDD</name>
+            <value>Quantum 10GB</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;&nbsp;RAM&nbsp;&nbsp;</name>
+            <value>64MB</value>
+          </attribute>
+          <attribute>
+            <name>��Գ�¥</name>
+            <value>1998</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;����ó&nbsp;&nbsp;</name>
+            <value>&nbsp;</value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>Name</name>
+            <value>prague</value>
+          </attribute>
+          <attribute>
+            <name>����</name>
+            <value>ڰ�(�ȫ��� �����Ʈ)</value>
+          </attribute>
+          <attribute>
+            <name>CPU</name>
+            <value>Pentium II 300MHz</value>
+          </attribute>
+          <attribute>
+            <name>HDD</name>
+            <value>Quantum 4GB</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;&nbsp;RAM&nbsp;&nbsp;</name>
+            <value>64MB</value>
+          </attribute>
+          <attribute>
+            <name>���Գ�¥</name>
+            <value>1998</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;����ó&nbsp;&nbsp;</name>
+            <value>&nbsp;</value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>Name</name>
+            <value>kwai</value>
+          </attribute>
+          <attribute>
+            <name>����</name>
+            <value>��㼺ö</value>
+          </attribute>
+          <attribute>
+            <name>CPU</name>
+            <value>Pentium II 266MHz</value>
+          </attribute>
+          <attribute>
+            <name>HDD</name>
+            <value>IBM SCSI 8GB</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;&nbsp;RAM&nbsp;&nbsp;</name>
+            <value>128MB</value>
+          </attribute>
+          <attribute>
+            <name>���Գ�¥</name>
+            <value>1997.8</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;����ó&nbsp;&nbsp;</name>
+            <value>�ϳ���ũ</value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>Name</name>
+            <value>sumjin</value>
+          </attribute>
+          <attribute>
+            <name>����</name>
+            <value>
+              ڰ� &#13;
+              (4�� software, CD-R)
+            </value>
+          </attribute>
+          <attribute>
+            <name>CPU</name>
+            <value>Pentium pro 200MHz dual</value>
+          </attribute>
+          <attribute>
+            <name>HDD</name>
+            <value>IBM 4GB * 2</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;&nbsp;RAM&nbsp;&nbsp;</name>
+            <value>96MB</value>
+          </attribute>
+          <attribute>
+            <name>��Գ�¥</name>
+            <value>1996.11</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;����ó&nbsp;&nbsp;</name>
+            <value>�ѱ�����ý��</value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>Name</name>
+            <value>daedong</value>
+          </attribute>
+          <attribute>
+            <name>ۻ���</name>
+            <value>
+              ڰ� &#13;
+              (scanner, TV)
+            </value>
+          </attribute>
+          <attribute>
+            <name>CPU</name>
+            <value>Pentium 133MHz</value>
+          </attribute>
+          <attribute>
+            <name>HDD</name>
+            <value>Fujitsu 1.9GB</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;&nbsp;RAM&nbsp;&nbsp;</name>
+            <value>64MB</value>
+          </attribute>
+          <attribute>
+            <name>뱸�Գ�¥</name>
+            <value>1996.5</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;����ó&nbsp;&nbsp;</name>
+            <value>����Ʈ</value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>Name</name>
+            <value>jordan</value>
+          </attribute>
+          <attribute>
+            <name>����</name>
+            <value>ڰ� (���հ��)</value>
+          </attribute>
+          <attribute>
+            <name>CPU</name>
+            <value>Pentium 133MHz</value>
+          </attribute>
+          <attribute>
+            <name>HDD</name>
+            <value>Samsung 1.6GB</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;&nbsp;RAM&nbsp;&nbsp;</name>
+            <value>64MB</value>
+          </attribute>
+          <attribute>
+            <name>���Գ�¥</name>
+            <value>1996</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;����ó&nbsp;&nbsp;</name>
+            <value>&nbsp;</value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>Name</name>
+            <value>charles</value>
+          </attribute>
+          <attribute>
+            <name>����</name>
+            <value>ڰ�</value>
+          </attribute>
+          <attribute>
+            <name>CPU</name>
+            <value>Pentium 133MHz</value>
+          </attribute>
+          <attribute>
+            <name>HDD</name>
+            <value>Samsung 1.6GB</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;&nbsp;RAM&nbsp;&nbsp;</name>
+            <value>64MB</value>
+          </attribute>
+          <attribute>
+            <name>뱸�Գ�¥</name>
+            <value>1996</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;����ó&nbsp;&nbsp;</name>
+            <value>&nbsp;</value>
+          </attribute>
+        </row>
+        <row>
+          <attribute>
+            <name>Name</name>
+            <value>elbe</value>
+          </attribute>
+          <attribute>
+            <name>����</name>
+            <value>ڰ�</value>
+          </attribute>
+          <attribute>
+            <name>CPU</name>
+            <value>Pentium 133MHz</value>
+          </attribute>
+          <attribute>
+            <name>HDD</name>
+            <value>Samsung 1.4GB</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;&nbsp;RAM&nbsp;&nbsp;</name>
+            <value>32MB</value>
+          </attribute>
+          <attribute>
+            <name>뱸�Գ�¥</name>
+            <value>1996</value>
+          </attribute>
+          <attribute>
+            <name>&nbsp;����ó&nbsp;&nbsp;</name>
+            <value>&nbsp;</value>
+          </attribute>
+        </row>
+      </inventory>
+    </pc>
+  </resources>
+  <courses>
+    <course>
+      <year>                             2007          </year>
+      <topic>CS               233 �����ͱ���׾˰���� (Spring)&lt;/font&gt;</topic>
+      <topic>          EE               800A ���ǻ�Ͱ��м��̳�A (Spring)      </topic>
+    </course>
+    <course>
+      <year>                             2004          </year>
+      <topic>CS               607 Network Management Systems (Spring)&lt;/font&gt;</topic>
+      <topic>
+        CS               607 Network Management Systems (Spring)&lt;/font&gt; &#13;
+      </topic>
+    </course>
+    <course>
+      <year>                             2003          </year>
+      <topic>  	    CS233 (Data Structures and Algorithms) &lt;/font&gt;  	</topic>
+      <topic>                        CS702 (Topics in Computer Systems: Internet Traffic Monitoring and Analysis) &lt;/font&gt;  	      </topic>
+      <topic>             	    CS637 (Network Management System) &lt;/font&gt;  	      </topic>
+    </course>
+    <course>
+      <year>                             2002          </year>
+      <topic>CS               600 Distributed Systems (Fall)&lt;/font&gt;</topic>
+      <topic>          CS               332 Software Design Methods (Fall)&lt;/font&gt;      </topic>
+    </course>
+    <course>
+      <year>                             2000          </year>
+      <topic>  CS 607&nbsp;Network Management Systems (Fall) &lt;/font&gt;        </topic>
+      <topic>
+        CS720H&nbsp;Recent Advances in Network Management   (Spring ) &#13;
+        &lt;/font&gt;
+      </topic>
+    </course>
+    <course>
+      <year>                             1999          </year>
+      <topic>CS 516&nbsp;Computer Networks (Fall) &lt;/font&gt;</topic>
+      <topic>          CS 637&nbsp;Network Management Systems (Spring) &nbsp;&lt;/font&gt;      </topic>
+    </course>
+    <course>
+      <year>                             1998          </year>
+      <topic>CS720C&nbsp;Topics in Computer Systems: Distributed   Object-Oriented Middleware (Fall) &lt;/font&gt;</topic>
+      <topic>          IT 522 Computer Networks (Fall)       </topic>
+      <topic>          CS 639               Distributed Systems Management (Spring) &lt;/font&gt;      </topic>
+    </course>
+    <course>
+      <year>                             1997          </year>
+      <topic>CS 516 Computer Networks (Fall) </topic>
+      <topic>          CS 637               Network Management Systems (Spring) &lt;/font&gt;      </topic>
+    </course>
+    <course>
+      <year>                             1996          </year>
+      <topic>CS 613               Distributed Systems (Fall) &lt;/font&gt;</topic>
+      <topic>          IT 527               Distributed Systems (Spring) &lt;/font&gt;      </topic>
+    </course>
+  </courses>
+</introduction>

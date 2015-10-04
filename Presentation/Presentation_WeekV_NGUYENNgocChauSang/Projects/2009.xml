@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<projects>
+  <row>
+    <attribute>
+      <name>        &nbsp;Project      </name>
+      <value>          World Class University (WCU) - Autonomics Group             </value>
+    </attribute>
+    <attribute>
+      <name>        Funding Source      </name>
+      <value>        Ministry of Knowledge Economy (MKE)      </value>
+    </attribute>
+    <attribute>
+      <name>        Team Members      </name>
+      <value>           	 </value>
+    </attribute>
+  </row>
+  <row>
+    <attribute>
+      <name>        &nbsp;Project      </name>
+      <value>
+        CASFI (Collect, Analyze, and Share for Future Internet): High-Precision Measurement and Anaysis Research &#13;
+        (Manageability of future internet)
+      </value>
+    </attribute>
+    <attribute>
+      <name>        Funding Source      </name>
+      <value>        Ministry of Knowledge Economy (MKE)      </value>
+    </attribute>
+    <attribute>
+      <name>        Team Members      </name>
+      <value>           	 �輺�, ���        </value>
+    </attribute>
+  </row>
+  <row>
+    <attribute>
+      <name>        &nbsp;Project      </name>
+      <value>
+        ��� մܸ�� �� ѳ���� ����Ʈ�� �� �             &#13;
+        (Research on Embedded Software Technology for Network             Convergence Mobile Platforms) &#13;
+        (���ITп������ ��������)&#13;
+      </value>
+    </attribute>
+    <attribute>
+      <name>        Funding Source      </name>
+      <value>        Ministry of Knowledge Economy (MKE) - ITRC      </value>
+    </attribute>
+    <attribute>
+      <name>        Team Members      </name>
+      <value>          	  ��ظ, ����ż�       </value>
+    </attribute>
+  </row>
+  <row>
+    <attribute>
+      <name>        &nbsp;Project      </name>
+      <value>           		Performance Analysis of Underutilized Enterprise Network             </value>
+    </attribute>
+    <attribute>
+      <name>        Funding Source      </name>
+      <value>        No funding      </value>
+    </attribute>
+    <attribute>
+      <name>        Team Members      </name>
+      <value>          	  ȫ��ö, ��ȫ�, ÿ��, ��ֹ��, �ں�ö 	       </value>
+    </attribute>
+  </row>
+  <row>
+    <attribute>
+      <name>        &nbsp;Project      </name>
+      <value>
+        IPTV dimensioning          &#13;
+      </value>
+    </attribute>
+    <attribute>
+      <name>        Funding Source      </name>
+      <value>        No funding      </value>
+    </attribute>
+    <attribute>
+      <name>        Team Members      </name>
+      <value>                Suman Pandey, Young J Won  	        </value>
+    </attribute>
+  </row>
+  <row>
+    <attribute>
+      <name>        &nbsp;Project      </name>
+      <value>                	Traffic Measurement </value>
+    </attribute>
+    <attribute>
+      <name>        Funding Source      </name>
+      <value>        No funding      </value>
+    </attribute>
+    <attribute>
+      <name>        Team Members      </name>
+      <value>            	���, ���, �ȫ��ö 	        </value>
+    </attribute>
+  </row>
+  <row>
+    <attribute>
+      <name>        &nbsp;Project      </name>
+      <value>
+        BGP Hijacking Detection          &#13;
+      </value>
+    </attribute>
+    <attribute>
+      <name>        Funding Source      </name>
+      <value>        No funding      </value>
+    </attribute>
+    <attribute>
+      <name>        Team Members      </name>
+      <value>           	ȫ��ö 	        </value>
+    </attribute>
+  </row>
+  <row>
+    <attribute>
+      <name>        &nbsp;Project      </name>
+      <value>
+        New Generation Operations Systems and Software (NGOSS)         &#13;
+      </value>
+    </attribute>
+    <attribute>
+      <name>        Funding Source      </name>
+      <value>        No funding      </value>
+    </attribute>
+    <attribute>
+      <name>        Team Members      </name>
+      <value>            	���ż�, ��� 	        </value>
+    </attribute>
+  </row>
+  <row>
+    <attribute>
+      <name>        &nbsp;Project      </name>
+      <value>           		FOSDAM: Feature Oriented Software Development for Autonomic Management (joint research at UTAustin)      </value>
+    </attribute>
+    <attribute>
+      <name>        Funding Source      </name>
+      <value>        BK21      </value>
+    </attribute>
+    <attribute>
+      <name>        Team Members      </name>
+      <value>          ذ��ظ 	       </value>
+    </attribute>
+  </row>
+</projects>

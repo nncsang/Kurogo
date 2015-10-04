@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<projects>
+  <row>
+    <attribute>
+      <name>        &nbsp;Project      </name>
+      <value>
+        ��� ���¼� ��Ÿ ��ý���� �� Manager�� Ǳ��               &#13;
+        (Implementation of Manager for Broadband Power Line Communication           Network Management System)
+      </value>
+    </attribute>
+    <attribute>
+      <name>        Funding Source      </name>
+      <value>
+        ��ѱ���&#13;
+        ¿����
+      </value>
+    </attribute>
+    <attribute>
+      <name>        Team Members      </name>
+      <value>        ��â�, ٰ��ظ, ��ֹ��             </value>
+    </attribute>
+  </row>
+  <row>
+    <attribute>
+      <name>        &nbsp;Project      </name>
+      <value>
+        �� մܸ�� �� ѳ���� ����Ʈ�� �� �             &#13;
+        (Research on Embedded Software Technology for Network             Convergence Mobile Platforms) &#13;
+        (���ITп������ ��������)&#13;
+      </value>
+    </attribute>
+    <attribute>
+      <name>        Funding Source      </name>
+      <value>        ������ź      </value>
+    </attribute>
+    <attribute>
+      <name>        Team Members      </name>
+      <value>          	  ΰ��ظ, ��â�, ��ֹ��, ��ȫ�       </value>
+    </attribute>
+  </row>
+  <row>
+    <attribute>
+      <name>        &nbsp;Project      </name>
+      <value>                       ����ý�� ۳�Ʈ��ũ ������ ��� ܱ� �             </value>
+    </attribute>
+    <attribute>
+      <name>        Funding Source      </name>
+      <value>        POSCO      </value>
+    </attribute>
+    <attribute>
+      <name>        Team Members      </name>
+      <value>                ߿��,�ȫ��ö,�ں�ö,�ֹ�� 	       </value>
+    </attribute>
+  </row>
+  <row>
+    <attribute>
+      <name>        &nbsp;Project      </name>
+      <value>           		Performance Analysis of Underutilized Enterprise Network             </value>
+    </attribute>
+    <attribute>
+      <name>        Funding Source      </name>
+      <value>        No funding      </value>
+    </attribute>
+    <attribute>
+      <name>        Team Members      </name>
+      <value>          	  ȫ��ö, ��ȫ�, ÿ��, ��ֹ��, �ں�ö 	       </value>
+    </attribute>
+  </row>
+  <row>
+    <attribute>
+      <name>        &nbsp;Project      </name>
+      <value>                       AutoMO: Autonomic Management Framework for Mobile Devices based on Autonomic Computing       </value>
+    </attribute>
+    <attribute>
+      <name>        Funding Source      </name>
+      <value>        No funding      </value>
+    </attribute>
+    <attribute>
+      <name>        Team Members      </name>
+      <value>          ���ظ, ����ż�, �ֹ�� 	       </value>
+    </attribute>
+  </row>
+  <row>
+    <attribute>
+      <name>        &nbsp;Project      </name>
+      <value>                       Autonomic Network Selection Management using                 Context Information in Heterogeneous Networks&lt;/a&gt;       </value>
+    </attribute>
+    <attribute>
+      <name>        Funding Source      </name>
+      <value>        CMEST      </value>
+    </attribute>
+    <attribute>
+      <name>        Team Members      </name>
+      <value>          ���ظ 	       </value>
+    </attribute>
+  </row>
+  <row>
+    <attribute>
+      <name>        &nbsp;Project      </name>
+      <value>
+        Network Performance Forecasting System         &#13;
+        (�������)
+      </value>
+    </attribute>
+    <attribute>
+      <name>        Funding Source      </name>
+      <value>        No funding      </value>
+    </attribute>
+    <attribute>
+      <name>        Team Members      </name>
+      <value>              ����ö, ��â�, ٰ��ظ 	       </value>
+    </attribute>
+  </row>
+  <row>
+    <attribute>
+      <name>        &nbsp;Project      </name>
+      <value>                                        ISP ��ȣ��ӱ����� ��� �Ʈ��� ������ ȿ���               </value>
+    </attribute>
+    <attribute>
+      <name>        Funding Source      </name>
+      <value>        KT      </value>
+    </attribute>
+    <attribute>
+      <name>        Team Members      </name>
+      <value>              ȫ��ö, ���ż� 	       </value>
+    </attribute>
+  </row>
+  <row>
+    <attribute>
+      <name>        &nbsp;Project      </name>
+      <value>
+        IPTV dimensioning          &#13;
+      </value>
+    </attribute>
+    <attribute>
+      <name>        Funding Source      </name>
+      <value>        No funding      </value>
+    </attribute>
+    <attribute>
+      <name>        Team Members      </name>
+      <value>                Suman Pandey Young J Won </value>
+    </attribute>
+  </row>
+</projects>
